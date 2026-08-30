@@ -95,7 +95,7 @@ run()*/
 
 // setIntervalni callbackda ishlaydi
 
-function maslahatBering (a, callback) {
+/*function maslahatBering (a, callback) {
     if (typeof a !== 'number') callback("insert a number",null);
     else if (a <= 20) callback(null, list[0]);
     else if (a > 20 && a <= 30) callback (null, list[1]);
@@ -115,4 +115,45 @@ maslahatBering(65 , (err, data) => {
     if (err) console.log ("ERROR:", err)
         else console.log ("Javob:",data)
 });
-console.log('passed here 1')
+console.log('passed here 1')*/
+
+
+
+
+
+
+function counterLetter (letter,word) {
+    let count = 0;
+
+    for(let i = 0; i < word.length; i++) {
+    if (word[i] === letter) {
+        count++;
+    } 
+  }
+  return count;
+}
+
+console.log(counterLetter("s", "sister"));
+
+
+function harfiniSana (letter,word){
+    let sana = 0;
+
+    for(let i = 0; i < word.length; i++)
+        if (word[i] === letter) {
+            sana++;
+        }
+        return sana;
+} 
+
+console.log(harfiniSana("a","banana"));
+
+function meniSana (letter,word) {
+    let sana;
+    for(let i = 0; i < word.length; i++);
+    if (word[i] === letter) {
+        sana++
+    }
+    return sana;
+}
+console.log (harfiniSana("e", "interesting"))
