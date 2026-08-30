@@ -16,7 +16,6 @@
     flex-direction: row;
     align-items: center;
     margin-top: 2px;
-    background-color: #f7f6b9;
 }
 
 .main_frame .left_frame {
@@ -36,6 +35,7 @@
     margin-right: 27px;
     display: flex;
     flex-direction: column;
+    background-color: white;
    
 }
 
@@ -316,3 +316,74 @@
 .extra-skills h2 {
     margin-bottom: 20px;
 }
+
+
+
+
+
+
+
+
+.right_frame {
+    clear:both;
+}
+
+.main-section > div {
+    width: 50%;
+    float: left;
+}
+.main-section img {
+    width: 350.4px;
+    height: 430.44px;
+    display: flex;
+    margin-left: 50px;
+}
+
+.main-section__introduction {
+
+    width: 501.57px;
+    height: 117.48px;
+
+    font-family: "Inter";
+    font-style: Bold;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 123.6%;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-bottom: 10px;
+    margin-left: 40px;
+    margin-top: 50px;
+    } 
+    .about-me_description {
+        font-family: "Inter";
+        font-style: Regular;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0%;
+        text-align: left;
+        text-transform: capitalize;
+        color: #797979;
+        margin-bottom: 10px;
+        margin-left: 45px;
+    }
+    
+    .button {
+         border: none;
+        height: 45px;
+        width: 150px;
+        background: #f0b000;;
+        background-size: 200% auto;
+        color: black;
+        border-radius: 5px;
+        font-weight: 500;
+        font-size: 14px;
+        cursor: pointer;
+        margin-top: 20px;
+        margin-left: 45px;
+        
+    }
+
+
+    
