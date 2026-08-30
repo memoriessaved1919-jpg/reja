@@ -30,8 +30,6 @@
 
 .main_frame .midd_frame {
     position: relative;
-
-    
     width: 970px;
     height: 1259px;
     margin-left: 30px;
@@ -158,7 +156,31 @@
     width: 221px;
     height: 126px;
     margin-left: 44px;
-    background-color: aqua;
+}
+
+.main_frame .left_frame .left_2 .personal-info {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 221px;
+}
+
+.main_frame .left_frame .left_2 .personal-info .info-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+
+}
+
+.main_frame .left_frame .left_2 .personal-info .info-item .spans {
+    background-color: #f0b000;
+    padding: 5px 8px;
+
+}
+
+.main_frame .left_frame .left_2 .personal-info .info-item .data {
+    margin: 0;
 }
 
 .main_frame .left_frame .left_3 {
@@ -167,16 +189,109 @@
     height: 153px;
     margin-top: 25px;
     margin-left: 45px;
-    background-color: aqua;
+
 }
+
+.main_frame .left_frame .left_3 .languages {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 220px;
+    margin-top: -40px;
+}
+
+.main_frame .left_frame .left_3 .languages .language {
+    margin-bottom: 20px;
+}
+
+.main_frame .left_frame .left_3 .languages .language .language-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.main_frame .left_frame .left_3 .languages .language .progress_1 {
+    width: 100%;
+    height: 4px;
+    background-color:darkorange;
+    border-radius: 30px;
+}
+
+.progress_2 {
+    background-color:darkorange;
+    width: 80%;
+    height: 4px;
+    border-radius: 30px;
+}
+
+.progress_3 {
+    background-color:darkorange;
+    width: 60%;
+    height: 4px;
+    border-radius: 30px;
+}
+
 .main_frame .left_frame .left_4 {
     position: relative;
     width: 220px;
     height: 252px;
     margin-top: 25px;
     margin-left: 45px;
-    background-color: aqua;
 }
+
+.main_frame .left_frame .left_4 .skills {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 220px;
+    margin-top: -40px;
+}
+
+.main_frame .left_frame .left_4 .skills .skill {
+    margin-bottom: 20px;
+}
+
+.main_frame .left_frame .left_4 .skills .skill .skill-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+.main_frame .left_frame .left_4 .skills .skill .progress-skill_1 {
+    width: 100%;
+    height: 4px;
+    background-color:darkorange;
+    border-radius: 30px;
+}
+.main_frame .left_frame .left_4 .skills .skill .progress-skill_2 {
+     width: 85%;
+    height: 4px;
+    background-color:darkorange;
+    border-radius: 30px;
+}
+.main_frame .left_frame .left_4 .skills .skill .progress-skill_3 {
+     width: 80%;
+    height: 4px;
+    background-color:darkorange;
+    border-radius: 30px;
+}
+.main_frame .left_frame .left_4 .skills .skill .progress-skill_4 {
+     width: 75%;
+    height: 4px;
+    background-color:darkorange;
+    border-radius: 30px;
+}
+.main_frame .left_frame .left_4 .skills .skill .progress-skill_5 {
+     width: 85%;
+    height: 4px;
+    background-color:darkorange;
+    border-radius: 30px;
+}
+
+
+
+
+
+
 .main_frame .left_frame .left_5 {
     position: relative;
     width: 186px;
@@ -184,4 +299,20 @@
     margin-top: 25px;
     margin-left: 45px;
     background-color: aqua;
+}
+
+.extra-skills p {
+    display: flex;
+    text-decoration: none;
+} 
+.extra-skills a {
+    text-decoration: none;
+} 
+ 
+.extra-skills {
+    width: 220px;
+}
+
+.extra-skills h2 {
+    margin-bottom: 20px;
 }

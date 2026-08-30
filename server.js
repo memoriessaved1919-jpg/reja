@@ -15,9 +15,10 @@ fs.readFile("database/user.json", "utf8", (err, data) => {
 })
 
 //1: Kirish codelar
-app.use(express.static("public"));
-app.use(express.json());
-app.use(express.urlencoded({extended: true}));
+app.use(express.static("public"));//app.use(express.static("public")); // Middleware DP - publicni frontendga ochiqlaydi
+app.use(express.json()); // Middleware DP - Rest API access. (JSON => OBJECT, OBJECT => JSON)
+app.use(express.urlencoded({extended: true})); // Middleware DP - Traditional API access. 
+// Form orqaliy kelayotga requestlarni qabul qiladi. Ejsga bog'liq bogan masalalar 
 
 //2: Session code
 //3: Views code
