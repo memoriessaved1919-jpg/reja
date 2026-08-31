@@ -1,46 +1,27 @@
-console.log("Web serverni boshlash");
+const http = require("http");
+const mongodb = require("mongodb");
 
-const express = require('express');
-const app = express();
-const http = require('http');
-const fs = require('fs');
+let db;
+const connectionString = "mongodb+srv://memoriessaved1919_db_user:D37FUhuoDcYnLrJf@cluster0.bvgetue.mongodb.net/REJA";
 
-let user;
-fs.readFile("database/user.json", "utf8", (err, data) => {
-    if (err) {
-        console.log("ERROR:", err);
-    } else {
-        user = JSON.parse(data)
+mongodb.connect(
+  connectionString,
+  {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  }, 
+  (err, client) => {
+    if(err) console.log("ERROR on connection MongoDB");
+    else {
+      console.log("MongoDB connection succeed");
+      module.exports = client;
+      const app = require("./app");
+      const server = http.createServer(app);
+      let PORT = 3000;
+      server.listen(PORT,  function () {
+        console.log(`The server is running successfully on port: ${PORT}, http://localhost:${PORT}`
+        );
+      });
     }
-})
-
-//1: Kirish codelar
-app.use(express.static("public"));//app.use(express.static("public")); // Middleware DP - publicni frontendga ochiqlaydi
-app.use(express.json()); // Middleware DP - Rest API access. (JSON => OBJECT, OBJECT => JSON)
-app.use(express.urlencoded({extended: true})); // Middleware DP - Traditional API access. 
-// Form orqaliy kelayotga requestlarni qabul qiladi. Ejsga bog'liq bogan masalalar 
-
-//2: Session code
-//3: Views code
-app.set("views","views");
-app.set("view engine", "ejs");
-
-//4: Routing code
-app.post("/create-item", (req, res) => {
-    console.log(req.body);
-    res.json({test: "success"})
-} )  
-
-app.get('/author', (req, res) => {
-    res.render ("author", { user: user });
-})
-
-app.get ("/", function (req, res) {
-    res.render("reja")
-})
-
-const server = http.createServer(app);
-let PORT = 3000;
-server.listen(PORT, function() {
-    console.log(`The server is running successfully on port: ${PORT}, http://localhost:${PORT}`)
-})
+  }
+);
