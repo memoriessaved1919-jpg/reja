@@ -298,25 +298,33 @@
     height: 148px;
     margin-top: 25px;
     margin-left: 45px;
-    background-color: aqua;
+    
 }
 
-.extra-skills p {
-    display: flex;
-    text-decoration: none;
-} 
-.extra-skills a {
-    text-decoration: none;
-} 
  
+
 .extra-skills {
-    width: 220px;
+    display: flex;
+    flex-direction: column;
+    margin-top: -40px;
 }
+
+.extra-skill {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+}
+
+.extra-skill a {
+    text-decoration: none;
+    color: black;
+}
+ 
 
 .extra-skills h2 {
     margin-bottom: 20px;
 }
-
 
 
 
@@ -333,7 +341,7 @@
     float: left;
 }
 .main-section img {
-    width: 350.4px;
+    width: 370.4px;
     height: 430.44px;
     display: flex;
     margin-left: 50px;
@@ -386,4 +394,85 @@
     }
 
 
+    /* service secion */
+
+    .container1 {
+        margin-left: 46px;
+    }
+
+    .section-subtitle {
+    letter-spacing: 2px;
+    font-weight: 700;
+    margin-top: 10px;
+    color: #797979;
+    text-transform: uppercase;
+    }
+
+    .section-title {
+    margin-top: 5px;
+    font-size: 32px;
+    font-weight: 700;
+    color: black;
+    margin-left: 400px;
     
+}
+
+.paragraph {
+    margin-left: 290px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #797979;
+}
+
+    .services {
+    padding-top: 6.25rem;
+}
+.service-card {
+    display: inline-block;
+    width: 29%;
+    padding: 20px 1.87rem;
+    background-color: #f8faff;
+    margin-right: 3%;
+    text-align: center;
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+.services-card__icon {
+    width: 65px;
+    height: 75px;
+}
+.service-card__title {
+    color: #05364d;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 1.25rem;
+}
+.service-card__description {
+    font-size: 0.87rem;
+    line-height: 16px;
+    font-weight: 300;
+    color: #797979;
+}
+.service-card__link {
+    font-size: 0.81rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: orange;  
+    text-decoration: none;
+}
+
+.all-in-one {
+    margin-top: -90px;
+}
+
+ .service-card1 {
+    display: inline-block;
+    width: 29%;
+    padding: 25px 1.87rem;
+    background-color: #f8faff;
+    margin-right: 3%;
+    text-align: center;
+    box-sizing: border-box;
+    margin-top: 20px;
+ }
