@@ -14,6 +14,7 @@
     <div class="container">
         <h1 class="display-4 text-center py-1">REJA VA MAQSADLAR</h1>
 
+        <!-- TRADITIONAL API.      |.   POST.      |      {reja:INPUT} -->
         <div class="jumbotrone p-3 shadow-sm">
             <form id="create-form" action="/create-item" method="POST">
                 <div class="d-flex align-items-center">
@@ -43,10 +44,13 @@
             <div>
                 <button data-id="<%=item._id%>" 
                     class="edit-me btn btn-secondary btn-sm mr-1"
-                    >
+                    > 
                     Ozgartirish
                 </button>
-                <button data-id="<%=item._id%>" class="delete-me btn btn-danger btn-sm">Ochirish</button>
+                <button 
+                data-id="<%=item._id%>" class="delete-me btn btn-danger btn-sm">
+                Ochirish
+                </button>
             </div>
           </li>
             <% }) %>
@@ -57,5 +61,9 @@
             Hamma Rejalarni Ochirish
         </button>
     </div> 
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="/browser.js"></script>
 </body>
 </html>
+
+
