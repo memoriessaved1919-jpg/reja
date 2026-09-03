@@ -1,47 +1,60 @@
-// B-TASK
-console.log("B-TASK Javoblari")
-function countDigits (word) {
-    let sana = 0
-    for(let i = 0; i < word.length; i++) {
-        if(!isNaN(word[i])){
-            sana++;
-        }
-    }
-    return sana;
+// C- TASK
+console.log("C-TASK javiblari");
 
+function checkContent (st1, st2) {
+    let str1 = st1.split("");
+    let str2 = st2.split("")
+
+    str1.sort();
+    str2.sort();
+
+    return str1.join("") === str2.join("");
 }
-
-console.log(countDigits("g3s6dje8xt6ga4bv13"))
-
+console.log(checkContent("mitgroup", "gmtiprou"));
 
 
-function raqamSana (word) {
-    let count = 0;
-    for(let i = 0; i < word.length; i++) {
-        if(!isNaN(word[i])) {
-            count++;
-        }
-    }
-    return count;
-}
-console.log(raqamSana("6g3dg36dg23dfg427f6fg7f"));
+// // B-TASK
+// console.log("B-TASK Javoblari")
+// function countDigits (word) {
+//     let sana = 0
+//     for(let i = 0; i < word.length; i++) {
+//         if(!isNaN(word[i])){
+//             sana++;
+//         }
+//     }
+//     return sana;
+
+// }
+
+// console.log(countDigits("g3s6dje8xt6ga4bv13"))
 
 
 
-function countLetter (word) {
-    let hesob = 0
-    for(let i = 0; i < word.length; i++) {   ////index tekshiryapti
-        if (!isNaN(word[i])) {
-        hesob++;
-    }
-    } 
+// function raqamSana (word) {
+//     let count = 0;
+//     for(let i = 0; i < word.length; i++) {
+//         if(!isNaN(word[i])) {
+//             count++;
+//         }
+//     }
+//     return count;
+// }
+// console.log(raqamSana("6g3dg36dg23dfg427f6fg7f"));
+
+
+
+// function countLetter (word) {
+//     let hesob = 0
+//     for(let i = 0; i < word.length; i++) {   ////index tekshiryapti
+//         if (!isNaN(word[i])) {
+//         hesob++;
+//     }
+//     } 
     
-    return hesob;
+//     return hesob;
 
-}
-console.log(countLetter("F668tball"))
-
-
+// }
+// console.log(countLetter("F668tball"))
 
 
 
@@ -49,45 +62,47 @@ console.log(countLetter("F668tball"))
 
 
 
-// A-TASK bajarildi:
-
-console.log("A-TASK Javoblari")
-
-function counterLetter (letter,word) {
-    let count = 0;
-
-    for(let i = 0; i < word.length; i++) {
-    if (word[i] === letter) {
-        count++;
-    } 
-  }
-  return count;
-}
-
-console.log(counterLetter("s", "sister"));
 
 
-function harfiniSana (letter,word){
-    let sana = 0;
+// // A-TASK bajarildi:
 
-    for(let i = 0; i < word.length; i++)
-        if (word[i] === letter) {
-            sana++;
-        }
-        return sana;
-} 
+// console.log("A-TASK Javoblari")
 
-console.log(harfiniSana("a","banana"));
+// function counterLetter (letter,word) {
+//     let count = 0;
 
-function meniSana (letter,word) {
-    let sana = 0
-    for(let i = 0; i < word.length; i++);
-    if (word[i] === letter) {
-        sana++
-    }
-    return sana;
-}
-console.log (harfiniSana("e", "interesting"))
+//     for(let i = 0; i < word.length; i++) {
+//     if (word[i] === letter) {
+//         count++;
+//     } 
+//   }
+//   return count;
+// }
+
+// console.log(counterLetter("s", "sister"));
+
+
+// function harfiniSana (letter,word){
+//     let sana = 0;
+
+//     for(let i = 0; i < word.length; i++)
+//         if (word[i] === letter) {
+//             sana++;
+//         }
+//         return sana;
+// } 
+
+// console.log(harfiniSana("a","banana"));
+
+// function meniSana (letter,word) {
+//     let sana = 0
+//     for(let i = 0; i < word.length; i++);
+//     if (word[i] === letter) {
+//         sana++
+//     }
+//     return sana;
+// }
+// console.log (harfiniSana("e", "interesting"))
 
 
 
