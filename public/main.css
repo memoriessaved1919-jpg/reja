@@ -481,7 +481,7 @@
   /* Right Frame: Vertical Icon Nav  */
 
   :root {
-  --accent: #eba434;   /* amber/orange used across the page */
+  --accent: #eba434;   
   --icon-muted: #9a9a9a;
   --bg-white: #ffffff;
 }
@@ -511,11 +511,11 @@
 .side-nav__icon {
   width: 40px;
   height: 40px;
-  /* if your icons are plain black/gray SVGs, this filter tints them gray */
+ 
   
 }
 
-/* Mobile: hide or convert to a bottom bar */
+
 @media (max-width: 768px) {
   .side-nav {
     display: none;
