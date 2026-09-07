@@ -1,3 +1,6 @@
+ // D- TASK
+ console.log("D-TASK javiblari");
+
 class Shop {
 
     constructor(non,lagmon,cola) {
