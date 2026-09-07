@@ -40,7 +40,7 @@ app.post("/create-item", (req, res) => {
     db.collection("plans").insertOne( new_reja , (err, data) => { 
         res.json(data.ops[0]); 
     })
-} ); 
+} );
 
 app.post("/delete-item", (req, res) => {
     const id = req.body.id;
@@ -81,11 +81,10 @@ app.get ("/", function (req, res) {
         if(err) {
             console.log(err);
         res.end("something went wrong");
-        } else {
-                
-        
-        }
+        } else {              
         console.log(data);
+        }
+        
         res.render("reja", {items: data});
     })
     
