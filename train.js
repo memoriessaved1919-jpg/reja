@@ -1,41 +1,65 @@
- // D- TASK
- console.log("D-TASK javiblari");
+// E-TASK
 
-class Shop {
+//Shunday function tuzing, u bitta string argumentni qabul qilib osha stringni teskari qilib return qilsin. MASALAN: getReverse("hello") return qilsin "olleh".
 
-    constructor(non,lagmon,cola) {
-        this.mahsulotlar = {
-            non: non,
-            lagmon: lagmon,
-            cola: cola
-        };
-    }
+function teskari (str) {
+    return str.split('').reverse('').join('');
+} 
+
+console.log(teskari("hello"))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//  // D- TASK
+//  console.log("D-TASK javiblari");
+
+// class Shop {
+
+//     constructor(non,lagmon,cola) {
+//         this.mahsulotlar = {
+//             non: non,
+//             lagmon: lagmon,
+//             cola: cola
+//         };
+//     }
      
-    qoldiq() {
-        const vaqt = new Date()
-        const soat = vaqt.getHours();
-        const daqiqa = vaqt.getMinutes()
-        return `hozir ${soat}:${daqiqa}da ${this.mahsulotlar.non}ta non, ${this.mahsulotlar.lagmon}ta lagmon va ${this.mahsulotlar.cola}ta cola bor`
-    }
+//     qoldiq() {
+//         const vaqt = new Date()
+//         const soat = vaqt.getHours();
+//         const daqiqa = vaqt.getMinutes()
+//         return `hozir ${soat}:${daqiqa}da ${this.mahsulotlar.non}ta non, ${this.mahsulotlar.lagmon}ta lagmon va ${this.mahsulotlar.cola}ta cola bor`
+//     }
     
-    sotish(mahsulot, son) {
-        const vaqt = new Date();
-        console.log(`sotish() sotildi: ${vaqt.getHours()}: ${vaqt.getMinutes()}`);
-        this.mahsulotlar[mahsulot] -= son 
-    }
+//     sotish(mahsulot, son) {
+//         const vaqt = new Date();
+//         console.log(`sotish() sotildi: ${vaqt.getHours()}: ${vaqt.getMinutes()}`);
+//         this.mahsulotlar[mahsulot] -= son 
+//     }
 
-    qabul(mahsulot,son) {
-        const vaqt = new Date();
-        console.log(`qabul() olindi: ${vaqt.getHours()}: ${vaqt.getMinutes()}`);
-        this.mahsulotlar[mahsulot] += son 
-    }
-}
+//     qabul(mahsulot,son) {
+//         const vaqt = new Date();
+//         console.log(`qabul() olindi: ${vaqt.getHours()}: ${vaqt.getMinutes()}`);
+//         this.mahsulotlar[mahsulot] += son 
+//     }
+// }
 
-const shop = new Shop(4,5,2);
-console.log(shop.qoldiq());
-shop.sotish('non', 3);
-shop.qabul('cola', 5);
-console.log(shop.qoldiq())
+// const shop = new Shop(4,5,2);
+// console.log(shop.qoldiq());
+// shop.sotish('non', 3);
+// shop.qabul('cola', 5);
+// console.log(shop.qoldiq())
 
 
 

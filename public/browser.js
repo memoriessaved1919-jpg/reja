@@ -10,11 +10,11 @@ function itemTemplate(item) {
                 <button data-id="${item._id}" 
                     class="edit-me btn btn-secondary btn-sm mr-1"
                     > 
-                    Ozgartirish
+                    ✏️ Ozgartirish
                 </button>
                 <button 
                 data-id="${item._id}" class="delete-me btn btn-danger btn-sm">
-                Ochirish
+                🗑️ Ochirish
                 </button>
             </div>
           </li>`;
