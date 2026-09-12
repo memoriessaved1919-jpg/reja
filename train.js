@@ -1,26 +1,46 @@
+// // G- TASK
+// console.log("G-TASK javiblari");
+
+// Shunday function tuzingki unga integerlardan iborat array pass bolsin va 
+// function bizga osha arrayning eng katta qiymatiga tegishli birinchi indexni qaytarsin. 
+// MASALAN: getHighestIndex([5, 21, 12, 21, 8]) return qiladi 1 sonini.
+
+
+// function getHighestIndex (arr) {
+//     let engKatta = arr[0];
+//     let engKattaIndex = 0
+
+
+//     for (let i = 1; i < arr.length; i++) {
+//         if (arr[i] > engKatta) {
+//             engKatta = arr[i]
+//             engKattaIndex = i;
+//         }
+//     }
+//     return engKattaIndex
+// }
+
+// console.log(getHighestIndex([5, 21, 12, 21, 8]));
+
+
+
+
+
+
+
+
+
+
+
 // E-TASK
 
 //Shunday function tuzing, u bitta string argumentni qabul qilib osha stringni teskari qilib return qilsin. MASALAN: getReverse("hello") return qilsin "olleh".
 
-function teskari (str) {
-    return str.split('').reverse('').join('');
-} 
+// function teskari (str) {
+//     return str.split('').reverse('').join('');
+// } 
 
-console.log(teskari("hello"))
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// console.log(teskari("hello"))
 
 //  // D- TASK
 //  console.log("D-TASK javiblari");
