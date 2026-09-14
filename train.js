@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // // G- TASK
 // console.log("G-TASK javiblari");
 
@@ -21,6 +22,34 @@
 // }
 
 // console.log(getHighestIndex([5, 21, 12, 21, 8]));
+=======
+// F-TASK
+
+// Shunday findDoublers function tuzing,
+//  unga faqat bitta string argument pass bolib,
+//  agar stringda bir hil harf qatnashgan bolsa true, qatnashmasa false qaytarishi kerak. 
+//  MASALAN: getReverse("hello") return true return qiladi.
+
+
+function findDoublers (double) {
+    let birXilHarif = [];
+
+    for (let i = 0; i < double.length; i++) {
+        if (birXilHarif.includes(double[i])) {
+            return true
+        } else {
+            birXilHarif.push(double[i]) 
+        }
+    }
+    return false
+}
+console.log(findDoublers("hello"))
+
+
+
+
+
+>>>>>>> 68c7b69 (feat: F-TASK bajarildi)
 
 
 
@@ -34,11 +63,31 @@
 
 // E-TASK
 
-//Shunday function tuzing, u bitta string argumentni qabul qilib osha stringni teskari qilib return qilsin. MASALAN: getReverse("hello") return qilsin "olleh".
+//Shunday function tuzing,
+//  u bitta string argumentni qabul qilib osha stringni teskari qilib return qilsin.
+//  MASALAN: getReverse("hello") return qilsin "olleh".
 
 // function teskari (str) {
 //     return str.split('').reverse('').join('');
 // } 
+<<<<<<< HEAD
+=======
+
+// console.log(teskari("hello"))
+
+
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>> 68c7b69 (feat: F-TASK bajarildi)
 
 // console.log(teskari("hello"))
 
