@@ -1,29 +1,5 @@
-<<<<<<< HEAD
-// // G- TASK
-// console.log("G-TASK javiblari");
-
-// Shunday function tuzingki unga integerlardan iborat array pass bolsin va 
-// function bizga osha arrayning eng katta qiymatiga tegishli birinchi indexni qaytarsin. 
-// MASALAN: getHighestIndex([5, 21, 12, 21, 8]) return qiladi 1 sonini.
-
-
-// function getHighestIndex (arr) {
-//     let engKatta = arr[0];
-//     let engKattaIndex = 0
-
-
-//     for (let i = 1; i < arr.length; i++) {
-//         if (arr[i] > engKatta) {
-//             engKatta = arr[i]
-//             engKattaIndex = i;
-//         }
-//     }
-//     return engKattaIndex
-// }
-
-// console.log(getHighestIndex([5, 21, 12, 21, 8]));
-=======
 // F-TASK
+// console.log("F-TASK javiblari");
 
 // Shunday findDoublers function tuzing,
 //  unga faqat bitta string argument pass bolib,
@@ -48,20 +24,35 @@ console.log(findDoublers("hello"))
 
 
 
+// // G- TASK
+// console.log("G-TASK javiblari");
 
->>>>>>> 68c7b69 (feat: F-TASK bajarildi)
+// Shunday function tuzingki unga integerlardan iborat array pass bolsin va 
+// function bizga osha arrayning eng katta qiymatiga tegishli birinchi indexni qaytarsin. 
+// MASALAN: getHighestIndex([5, 21, 12, 21, 8]) return qiladi 1 sonini.
 
 
+// function getHighestIndex (arr) {
+//     let engKatta = arr[0];
+//     let engKattaIndex = 0
 
 
+//     for (let i = 1; i < arr.length; i++) {
+//         if (arr[i] > engKatta) {
+//             engKatta = arr[i]
+//             engKattaIndex = i;
+//         }
+//     }
+//     return engKattaIndex
+// }
 
-
-
+// console.log(getHighestIndex([5, 21, 12, 21, 8]));
 
 
 
 
 // E-TASK
+//  console.log("E-TASK javiblari");
 
 //Shunday function tuzing,
 //  u bitta string argumentni qabul qilib osha stringni teskari qilib return qilsin.
@@ -70,26 +61,11 @@ console.log(findDoublers("hello"))
 // function teskari (str) {
 //     return str.split('').reverse('').join('');
 // } 
-<<<<<<< HEAD
-=======
 
 // console.log(teskari("hello"))
 
 
 
-
-
-
-
-
-
-
-
-
-
->>>>>>> 68c7b69 (feat: F-TASK bajarildi)
-
-// console.log(teskari("hello"))
 
 //  // D- TASK
 //  console.log("D-TASK javiblari");
