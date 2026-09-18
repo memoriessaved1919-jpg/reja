@@ -1,3 +1,33 @@
+// K-TASK
+// console.log("K-TASK javiblari");
+
+// K-TASK
+
+// Shunday function yozing,
+//  u string qabul qilsin va string ichidagi unli harflar sonini qaytarsin.
+//  MASALAN: countVowels("string") return 1.
+
+
+
+function countVowels (string) {
+    let unlilar = "aeiou"
+    let son = 0
+
+    for (let i = 0; i < string.length; i++) {
+        if (unlilar.includes(string[i])) {
+            son++;
+        }
+    }
+    return son
+}
+
+
+console.log(countVowels("string"))
+
+
+
+
+
 // F-TASK
 // console.log("F-TASK javiblari");
 
@@ -7,19 +37,19 @@
 //  MASALAN: getReverse("hello") return true return qiladi.
 
 
-function findDoublers (double) {
-    let birXilHarif = [];
+// function findDoublers (double) {
+//     let birXilHarif = [];
 
-    for (let i = 0; i < double.length; i++) {
-        if (birXilHarif.includes(double[i])) {
-            return true
-        } else {
-            birXilHarif.push(double[i]) 
-        }
-    }
-    return false
-}
-console.log(findDoublers("hello"))
+//     for (let i = 0; i < double.length; i++) {
+//         if (birXilHarif.includes(double[i])) {
+//             return true
+//         } else {
+//             birXilHarif.push(double[i]) 
+//         }
+//     }
+//     return false
+// }
+// console.log(findDoublers("hello"))
 
 
 
