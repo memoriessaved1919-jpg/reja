@@ -1,3 +1,31 @@
+// L-TASK
+// console.log("L-TASK javiblari");
+
+//L-TASK
+
+//Shunday function yozing, 
+// u string qabul qilsin va string ichidagi hamma sozlarni chappasiga yozib va 
+// sozlar ketma-ketligini buzmasdan stringni qaytarsin.
+//  MASALAN: reverseSentence("we like coding!") return "ew ekil gnidoc".
+
+
+
+
+function reverseSentence (string) {
+    let sozlar = string.split(' ')
+    let natija = [];
+
+    for (let i = 0; i < sozlar.length; i++) {
+       sozlar[i].split('').reverse().join('')
+       natija.push(sozlar[i].split('').reverse().join(''))
+    }
+    return natija.join(' ')
+}
+
+console.log(reverseSentence("we like coding!"))
+
+
+
 // K-TASK
 // console.log("K-TASK javiblari");
 
@@ -9,20 +37,20 @@
 
 
 
-function countVowels (string) {
-    let unlilar = "aeiou"
-    let son = 0
+// function countVowels (string) {
+//     let unlilar = "aeiou"
+//     let son = 0
 
-    for (let i = 0; i < string.length; i++) {
-        if (unlilar.includes(string[i])) {
-            son++;
-        }
-    }
-    return son
-}
+//     for (let i = 0; i < string.length; i++) {
+//         if (unlilar.includes(string[i])) {
+//             son++;
+//         }
+//     }
+//     return son
+// }
 
 
-console.log(countVowels("string"))
+// console.log(countVowels("string"))
 
 
 
@@ -84,7 +112,7 @@ console.log(countVowels("string"))
 // E-TASK
 //  console.log("E-TASK javiblari");
 
-//Shunday function tuzing,
+// Shunday function tuzing,
 //  u bitta string argumentni qabul qilib osha stringni teskari qilib return qilsin.
 //  MASALAN: getReverse("hello") return qilsin "olleh".
 
